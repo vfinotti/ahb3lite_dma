@@ -77,7 +77,7 @@ module ahb3lite_dma #(
 
   // Common signals
   input                 clk_i,
-  input                 rst_i,
+  input                 rst_n_i,
 
   // --------------------------------------
   // WISHBONE INTERFACE 0
@@ -158,7 +158,7 @@ module ahb3lite_dma #(
   //
   // Variables
   //
-
+  assign rst = !rst_n_i;
 
   //////////////////////////////////////////////////////////////////
   //
@@ -329,7 +329,7 @@ module ahb3lite_dma #(
   ahb3lite_dma0 (
     // Common signals
     .clk_i       ( clk_i            ),
-    .rst_i       ( rst_i            ),
+    .rst_i       ( rst              ),
 
     // --------------------------------------
     // WISHBONE INTERFACE 0
