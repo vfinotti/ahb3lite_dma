@@ -158,7 +158,53 @@ module ahb3lite_dma #(
   //
   // Variables
   //
-  assign rst = !rst_n_i;
+  logic rst;
+
+  logic [31 : 0] to_wb0_dat_i;
+  logic [31 : 0] to_wb0_adr_i;
+  logic [ 3 : 0] to_wb0_sel_i;
+  logic          to_wb0_we_i;
+  logic          to_wb0_cyc_i;
+  logic          to_wb0_stb_i;
+  logic          from_wb0_dat_o;
+  logic [31 : 0] from_wb0_ack_o;
+  logic          from_wb0_err_o;
+
+  logic [31 : 0] to_wb1_dat_i;
+  logic [31 : 0] to_wb1_adr_i;
+  logic [ 3 : 0] to_wb1_sel_i;
+  logic          to_wb1_we_i;
+  logic          to_wb1_cyc_i;
+  logic          to_wb1_stb_i;
+  logic          from_wb1_dat_o;
+  logic [31 : 0] from_wb1_ack_o;
+  logic          from_wb1_err_o;
+
+  logic [31 : 0] from_m_wb0_adr_o;
+  logic [ 3 : 0] from_m_wb0_sel_o;
+  logic          from_m_wb0_we_o;
+  logic [31 : 0] from_m_wb0_dat_o;
+  logic          from_m_wb0_cyc_o;
+  logic          from_m_wb0_stb_o;
+  logic          to_m_wb0_ack_i;
+  logic          to_m_wb0_err_i;
+  logic [31 : 0] to_m_wb0_dat_i;
+  // logic [ 2 : 0] from_m_wb0_cti_o;
+  // logic [ 1 : 0] from_m_wb0_bte_o;
+
+  logic [31 : 0] from_m_wb1_adr_o;
+  logic [ 3 : 0] from_m_wb1_sel_o;
+  logic          from_m_wb1_we_o;
+  logic [31 : 0] from_m_wb1_dat_o;
+  logic          from_m_wb1_cyc_o;
+  logic          from_m_wb1_stb_o;
+  logic          to_m_wb1_ack_i;
+  logic          to_m_wb1_err_i;
+  logic [31 : 0] to_m_wb1_dat_i;
+  // logic [ 2 : 0] from_m_wb1_cti_o;
+  // logic [ 1 : 0] from_m_wb1_bte_o;
+
+
 
   //////////////////////////////////////////////////////////////////
   //
