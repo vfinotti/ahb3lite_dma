@@ -338,7 +338,7 @@ module ahb3lite_dma #(
     .mHPROT          ( m1HPROT          ) );
 
 
-  ahb3lite_dma #(
+  wb_dma_top #(
     // chXX_conf = { CBUF, ED, ARS, EN }
     .rf_addr     ( rf_addr          ),
     .pri_sel     ( pri_sel          ),
@@ -374,7 +374,7 @@ module ahb3lite_dma #(
     .ch28_conf   ( ch28_conf        ),
     .ch29_conf   ( ch29_conf        ),
     .ch30_conf   ( ch30_conf        ) )
-  ahb3lite_dma0 (
+  wb_dma0 (
     // Common signals
     .clk_i       ( clk_i            ),
     .rst_i       ( rst              ),
