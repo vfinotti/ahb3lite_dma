@@ -438,4 +438,5 @@ module ahb3lite_dma #(
     .dma_ack_o   ( dma_ack_o        ),
     .dma_rest_i  ( dma_rest_i       ),
     .inta_o      ( inta_o           ),
-    .intb_       ( intb_o           ) );
+    .intb_o      ( intb_o           ) );
+
