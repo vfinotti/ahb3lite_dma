@@ -3,4 +3,4 @@
 	url = https://github.com/vfinotti/ahb3lite_wb_bridge.git
 [submodule "wb_dma"]
 	path = wb_dma
-	url = https://github.com/freecores/wb_dma.git
+	url = https://github.com/vfinotti/wb_dma.git
