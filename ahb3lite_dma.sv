@@ -420,15 +420,15 @@ module ahb3lite_dma #(
     .wb1_rty_o   (                  ),
 
     // Master Interface
-    .wb1m_data_i ( to_m_wb0_dat_i   ),
-    .wb1m_data_o ( from_m_wb0_dat_o ),
-    .wb1_addr_o  ( from_m_wb0_adr_o ),
-    .wb1_sel_o   ( from_m_wb0_sel_o ),
-    .wb1_we_o    ( from_m_wb0_we_o  ),
-    .wb1_cyc_o   ( from_m_wb0_cyc_o ),
-    .wb1_stb_o   ( from_m_wb0_stb_o ),
-    .wb1_ack_i   ( to_m_wb0_ack_i   ),
-    .wb1_err_i   ( to_m_wb0_err_i   ),
+    .wb1m_data_i ( to_m_wb1_dat_i   ),
+    .wb1m_data_o ( from_m_wb1_dat_o ),
+    .wb1_addr_o  ( from_m_wb1_adr_o ),
+    .wb1_sel_o   ( from_m_wb1_sel_o ),
+    .wb1_we_o    ( from_m_wb1_we_o  ),
+    .wb1_cyc_o   ( from_m_wb1_cyc_o ),
+    .wb1_stb_o   ( from_m_wb1_stb_o ),
+    .wb1_ack_i   ( to_m_wb1_ack_i   ),
+    .wb1_err_i   ( to_m_wb1_err_i   ),
     .wb1_rty_i   ( 1'b0             ),
 
     // --------------------------------------
