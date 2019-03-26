@@ -210,7 +210,9 @@ module ahb3lite_dma #(
   //
   // Module Body
   //
-  ahb3lite_to_wb_0 ahb3lite_to_wb (
+  assign rst = !rst_n_i;
+    
+  ahb3lite_to_wb ahb3lite_to_wb_0 (
     .clk_i         ( clk_i          ),
     .rst_n_i       ( rst_n_i        ),
 
@@ -240,7 +242,7 @@ module ahb3lite_dma #(
     .from_wb_err_o ( from_wb0_err_o ) );
 
 
-  wb_to_ahb3lite_0 wb_to_ahb3lite (
+  wb_to_ahb3lite wb_to_ahb3lite_0 (
     .clk_i           ( clk_i            ),
     .rst_n_i         ( rst_n_i          ),
 
@@ -273,7 +275,7 @@ module ahb3lite_dma #(
     .mHPROT          ( m0HPROT          ) );
 
 
-  ahb3lite_to_wb_1 ahb3lite_to_wb (
+  ahb3lite_to_wb ahb3lite_to_wb_1 (
     .clk_i         ( clk_i          ),
     .rst_n_i       ( rst_n_i        ),
 
@@ -303,7 +305,7 @@ module ahb3lite_dma #(
     .from_wb_err_o ( from_wb1_err_o ) );
 
 
-  wb_to_ahb3lite_1 wb_to_ahb3lite (
+  wb_to_ahb3lite wb_to_ahb3lite_1 (
     .clk_i           ( clk_i            ),
     .rst_n_i         ( rst_n_i          ),
 
