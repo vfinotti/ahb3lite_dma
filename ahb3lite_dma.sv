@@ -257,8 +257,8 @@ module ahb3lite_dma #(
     .to_m_wb_err_i   ( to_m_wb0_err_i   ),
     .to_m_wb_dat_i   ( to_m_wb0_dat_i   ),
 
-    .from_m_wb_cti_o ( from_m_wb0_cti_o ),
-    .from_m_wb_bte_o ( from_m_wb0_bte_o ),
+    .from_m_wb_cti_o ( 3'b000           ), // Cycle Type Identifier ( 3'b000 - Classic cycle, 3'b111 - End-of-cycle)
+    .from_m_wb_bte_o (                  ),
 
     //// to ahb3lite
     .mHSEL           ( m0HSEL           ),
@@ -320,8 +320,8 @@ module ahb3lite_dma #(
     .to_m_wb_err_i   ( to_m_wb1_err_i   ),
     .to_m_wb_dat_i   ( to_m_wb1_dat_i   ),
 
-    .from_m_wb_cti_o ( from_m_wb1_cti_o ),
-    .from_m_wb_bte_o ( from_m_wb1_bte_o ),
+    .from_m_wb_cti_o ( 3'b000           ), // Cycle Type Identifier ( 3'b000 - Classic cycle, 3'b111 - End-of-cycle)
+    .from_m_wb_bte_o (                  ),
 
     //// to ahb3lite
     .mHSEL           ( m1HSEL           ),
