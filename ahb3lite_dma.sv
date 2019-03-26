@@ -145,8 +145,8 @@ module ahb3lite_dma #(
   input  [ch_count-1:0] dma_nd_i,
   output [ch_count-1:0] dma_ack_o,
   input  [ch_count-1:0] dma_rest_i,
-  output                inta_o,
-  output                intb_o
+  output                irqa_o,
+  output                irqb_o
 );
   //////////////////////////////////////////////////////////////////
   //
@@ -437,7 +437,7 @@ module ahb3lite_dma #(
     .dma_nd_i    ( dma_nd_i         ),
     .dma_ack_o   ( dma_ack_o        ),
     .dma_rest_i  ( dma_rest_i       ),
-    .inta_o      ( inta_o           ),
-    .intb_o      ( intb_o           ) );
+    .irqa_o      ( irqa_o           ),
+    .irqb_o      ( irqb_o           ) );
 
 endmodule
