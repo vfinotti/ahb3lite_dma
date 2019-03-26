@@ -440,3 +440,4 @@ module ahb3lite_dma #(
     .inta_o      ( inta_o           ),
     .intb_o      ( intb_o           ) );
 
+endmodule
