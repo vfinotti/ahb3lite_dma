@@ -80,7 +80,7 @@ module ahb3lite_dma #(
   input                 rst_n_i,
 
   // --------------------------------------
-  // WISHBONE INTERFACE 0
+  // AHB3-Lite INTERFACE 0
   // Slave Interface
   input                 s0HSEL,
   input  [31:0]         s0HADDR,
@@ -110,7 +110,7 @@ module ahb3lite_dma #(
   input                 m0HRESP,
 
   // --------------------------------------
-  // WISHBONE INTERFACE 1
+  // AHB3-Lite INTERFACE 1
   // Slave Interface
   input                 s1HSEL,
   input  [31:0]         s1HADDR,
