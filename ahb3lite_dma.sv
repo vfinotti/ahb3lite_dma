@@ -6,10 +6,13 @@
 //
 // unit name:     AHB3-Lite DMA core
 //
-// description: DMA core compatible with AHB3-Lite protocol. For simplicity, an
-// already existing (and tested) wishbone DMA core was used, and properly
-// wrapped with bridges to AHB3-Lite. For the instructions on how to use the
-// core, please refer to the original documentation in the DMA submodule.
+//   description: DMA core compatible with AHB3-Lite protocol. For simplicity,
+//   an already existing (and tested) wishbone DMA core was used, and properly
+//   wrapped with bridges to AHB3-Lite. For the instructions on how to use the
+//   core, please refer to the original documentation in the DMA submodule.
+//
+//   Note that interfaces 0 and 1 SHOULD NOT be connected to the same ahb3lite
+//   bus, given that this causes loops and issues at synthesis.
 //
 //
 ///////////////////////////////////////////////////////////////////////////////
