@@ -11,7 +11,7 @@ The documentation for reference should be the one of the original DMA core, give
 
 ## Features
 
-<!-- - Tested through simulation and synthesis -->
+- Tested through simulation and synthesis
 - Support for AMBA 3 AHB-Lite protocol
 - 32-bit width address bus
 - 32-bit width data bus
